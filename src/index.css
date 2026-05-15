@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-nabta-green: #7BC67B;
+  --color-nabta-dark-green: #2D5A27;
+  --color-nabta-teal: #61A3BA;
+  --color-nabta-yellow: #FFD93D;
+  --color-nabta-beige: #FDFBF2;
+  --color-nabta-red: #FF5252;
+}
+
+body {
+  background: radial-gradient(circle at 10% 20%, #E8F5E9 0%, #FDFBF2 50%, #FFF9C4 100%);
+  color: #2D3748;
+  font-family: var(--font-sans);
+  direction: rtl;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
+
+.frosted-card {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+}
+
+.chunky-button {
+  background-color: var(--color-nabta-green);
+  box-shadow: 0 10px 0 #5A9A5A;
+  transition: all 0.1s ease;
+}
+
+.chunky-button:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}
